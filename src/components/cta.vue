@@ -1,19 +1,15 @@
 <template>
-  <div class="thq-section-padding">
-    <div class="thq-section-max-width">
-      <div class="cta-accent2-bg">
-        <div class="cta-accent1-bg">
-          <div class="cta-container2">
-            <div class="cta-content">
-              <span class="thq-heading-2">{{ heading1 }}</span>
-              <p class="thq-body-large">{{ content1 }}</p>
-            </div>
-            <div class="cta-actions">
-              <button type="button" class="thq-button-filled cta-button">
-                {{ action1 }}
-              </button>
-            </div>
-          </div>
+  <div class="cta-section">
+    <div class="cta-container">
+      <div class="cta-background">
+      
+        <div class="team-member">
+          <h1>Meet Our Team
+          </h1>
+          <img src="../assets/left.jpg" alt="Dr. Usha Maniya" class="team-image" />
+          <h2 class="team-name">Dr. Usha Maniya</h2>
+          <p class="team-title">Dr. Usha Maniya holds an MBBS</p>
+          <p class="cta-content">{{ content1 }}</p>
         </div>
       </div>
     </div>
@@ -24,14 +20,9 @@
 export default {
   name: 'CTA',
   props: {
-    heading1: {
-      type: String,
-      default: 'Start Your Journey Today',
-    },
     content1: {
       type: String,
-      default:
-        'Discover how our experienced team can help you?',
+      default: 'Discover how our experienced team can help you?',
     },
     action1: {
       type: String,
@@ -42,76 +33,62 @@ export default {
 </script>
 
 <style scoped>
-.cta-accent2-bg {
-  gap: var(--dl-space-space-oneandhalfunits);
-  display: flex;
-  transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(1deg) skew(0deg, 0deg);
-  align-self: stretch;
-  transition: 0.3s;
-  align-items: center;
-  border-radius: var(--dl-radius-radius-cardradius);
-  justify-content: space-between;
-  transform-style: preserve-3d;
-  background-color: var(--dl-color-theme-accent2);
+.cta-section {
+  padding: 4rem 1rem; /* Added horizontal padding for mobile */
 }
-.cta-accent2-bg:hover {
-  transform: scale3d(1.1,1.1,1.1);
-}
-.cta-accent1-bg {
-  width: 100%;
+
+.cta-container {
+  transition: transform 0.3s;
   display: flex;
-  transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(-2deg) skew(0deg, 0deg);
+  flex-direction: column;
   align-items: center;
-  border-radius: var(--dl-radius-radius-cardradius);
-  justify-content: space-between;
-  transform-style: preserve-3d;
+}
+
+.cta-container:hover {
+  transform: scale(1.05);
+}
+
+.team-member {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center align for mobile */
+  text-align: center; /* Center text for mobile */
+}
+
+.team-image {
+  width: 15rem; /* Adjusted size for mobile */
+  height: 15rem; /* Adjusted size for mobile */
+  border-radius: 10%;
+  margin: 1rem 0; /* Adjusted margin for mobile */
+}
+
+.cta-content {
+  padding: 0 1rem; /* Added padding for mobile readability */
+  text-align: center; /* Center align for better mobile display */
+}
+
+.cta-button {
+  padding: 0.5rem 1.5rem; /* Slightly larger button for easier tapping */
   background-color: var(--dl-color-theme-accent1);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
-.cta-container2 {
-  gap: var(--dl-space-space-threeunits);
-  width: 100%;
-  display: flex;
-  transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(1deg) skew(0deg, 0deg);
-  transition: 0.3s;
-  align-items: center;
-  padding-top: var(--dl-space-space-sixunits);
-  padding-left: var(--dl-space-space-fourunits);
-  border-radius: var(--dl-radius-radius-cardradius);
-  padding-right: var(--dl-space-space-fourunits);
-  padding-bottom: var(--dl-space-space-sixunits);
-}
-.cta-container2:hover {
-  color: var(--dl-color-theme-neutral-light);
+
+.cta-button:hover {
   background-color: var(--dl-color-theme-neutral-dark);
 }
-.cta-content {
-  gap: var(--dl-space-space-oneandhalfunits);
-  display: flex;
-  align-items: flex-start;
-  flex-direction: column;
-}
-.cta-actions {
-  gap: var(--dl-space-space-oneandhalfunits);
-  flex: 1;
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-end;
-}
-@media(max-width: 767px) {
-  .cta-container2 {
-    gap: var(--dl-space-space-oneandhalfunits);
-    flex-direction: column;
-    justify-content: flex-start;
+
+@media (max-width: 767px) {
+  .cta-container {
+    padding: 2rem 1rem; /* Adjusted padding for smaller screens */
   }
-}
-@media(max-width: 479px) {
-  .cta-actions {
-    flex-wrap: wrap;
-    align-self: stretch;
-    justify-content: center;
-  }
-  .cta-button {
-    flex: 1;
+  
+  .team-image {
+    width: 100%; /* Full width for smaller screens */
+    max-width: 15rem; /* Constrain max size */
+    height: auto; /* Maintain aspect ratio */
   }
 }
 </style>

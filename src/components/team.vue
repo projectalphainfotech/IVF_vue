@@ -5,27 +5,32 @@
       <div class="team-member">
         <div class="team-info">
           <img src="../assets/left.jpg" alt="Dr. Usha Maniya" class="team-image" />
-          <h2 class="team-name">Dr. Usha Maniya</h2>
-          <p class="team-title">
-            Dr. Usha Maniya holds an MBBS
-          </p>
+          <div >
+            <h2 class="team-name">Dr. Usha Maniya</h2>
+            <p class="team-title">Dr. Usha Maniya holds an MBBS</p>
+          </div>
         </div>
       </div>
       <div class="team-member">
         <div class="team-info">
           <img src="../assets/main.jpg" alt="Dr. Mansukh Gabani" class="team-image" />
-          <h2 class="team-name">Dr. Mansukh Gabani</h2>
-          <p class="team-title">MD Pathology, Senior Embryologist</p>
+          <div>
+            <h2 class="team-name">Dr. Mansukh Gabani</h2>
+            <p class="team-title">MD Pathology, Senior Embryologist</p>
+          </div>
         </div>
       </div>
       <div class="team-member">
         <div class="team-info">
           <img src="../assets/right.jpg" alt="Dr. Purvi Akabri" class="team-image" />
-          <h2 class="team-name">Dr. Purvi Akabri</h2>
-          <p class="team-title">BSc in Biotechnology, MSc in Biotechnology (Gold Medalist)</p>
+          <div>
+            <h2 class="team-name">Dr. Purvi Akabri</h2>
+            <p class="team-title">
+              BSc in Biotechnology, MSc in Biotechnology (Gold Medalist)
+            </p>
+          </div>
         </div>
       </div>
-      <!-- Add more team members here -->
     </div>
   </section>
 </template>
@@ -49,17 +54,20 @@
 }
 
 .team-member {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 1em;
-  width: 250px; /* Consistent card width */
+  width: 250px;
+  /* Consistent card width */
+  margin: 3rem;
   text-align: center;
 }
 
 .team-image {
-  width: 100%; /* Set to full width of the card */
-  height: 15rem; /* Fixed height for consistency */
+  width: 100%;
+  /* Set to full width of the card */
+  height: 15rem;
+  /* Fixed height for consistency */
   border-radius: 20%;
-  object-fit: cover; /* Maintain aspect ratio */
+  object-fit: cover;
+  /* Maintain aspect ratio */
 }
 
 .team-info {
@@ -75,4 +83,9 @@
   font-size: 1em;
   color: #555;
 }
+
+ .team-info div{
+  margin: 2rem;
+ }
+
 </style>

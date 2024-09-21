@@ -206,6 +206,9 @@ export default {
   text-align: center;
 }
 .testimonial-container12 {
+  background-color: #b7b8f3;
+  border-radius:1rem;
+  padding:1rem;
   gap: var(--dl-space-space-unit);
   display: flex;
   align-self: flex-start;
@@ -220,6 +223,7 @@ export default {
   border-radius: var(--dl-radius-radius-round);
 }
 .testimonial-container13 {
+  
   display: flex;
   align-items: flex-start;
   flex-direction: column;
@@ -229,6 +233,9 @@ export default {
   text-align: left;
 }
 .testimonial-container14 {
+  background-color: #b7b8f3;
+  border-radius:1rem;
+  padding:1rem;
   gap: var(--dl-space-space-unit);
   display: flex;
   align-self: flex-start;
@@ -243,6 +250,7 @@ export default {
   border-radius: var(--dl-radius-radius-round);
 }
 .testimonial-container15 {
+  
   display: flex;
   align-items: flex-start;
   flex-direction: column;
@@ -252,6 +260,9 @@ export default {
   text-align: left;
 }
 .testimonial-container16 {
+  background-color: #b7b8f3;
+  border-radius:1rem;
+  padding:1rem;
   gap: var(--dl-space-space-unit);
   display: flex;
   align-self: flex-start;
@@ -266,6 +277,7 @@ export default {
   border-radius: var(--dl-radius-radius-round);
 }
 .testimonial-container17 {
+  
   display: flex;
   align-items: flex-start;
   flex-direction: column;
@@ -275,6 +287,9 @@ export default {
   text-align: left;
 }
 .testimonial-container18 {
+  background-color: #b7b8f3;
+  border-radius:1rem;
+  padding:1rem;
   gap: var(--dl-space-space-unit);
   display: flex;
   align-self: flex-start;
