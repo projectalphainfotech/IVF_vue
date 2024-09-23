@@ -1,17 +1,9 @@
 <template>
-  <form @submit.prevent="handleSubmit">
+  <form @submit.prevent="handleSubmit" class="form-container">
     <div class="form-group">
       <label for="name">Name:</label>
       <input type="text" id="name" v-model="form.name" required />
     </div>
-    <!-- <div class="form-group">
-      <label for="shop-name">Shop Name:</label>
-      <input type="text" id="shop-name" v-model="form.shopName" required />
-    </div> -->
-    <!-- <div class="form-group">
-      <label for="email">Email:</label>
-      <input type="email" id="email" v-model="form.email" />
-    </div> -->
     <div class="form-group">
       <label for="phone">Mobile:</label>
       <input
@@ -35,8 +27,6 @@ export default {
     return {
       form: {
         name: '',
-        shopName: '',
-        email: '',
         phone: ''
       }
     }
@@ -56,8 +46,6 @@ export default {
           },
           body: JSON.stringify({
             number1: this.form.name,
-            number2: this.form.shopName,
-            number3: this.form.email,
             number4: this.form.phone
           })
         });
@@ -79,8 +67,28 @@ export default {
 </script>
 
 <style scoped>
+.form-container {
+  padding:2rem;
+  background-color: #f15353; /* Light background color */
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(175, 67, 67, 0.1);
+  width: 30rem;
+  margin:1.2rem; /* Center the form */
+}
+
+@media screen and (max-width:764px) {
+  .form-container {
+  padding:2rem;
+  background-color: #f15353; /* Light background color */
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(175, 67, 67, 0.1);
+  width: 18rem;
+  margin:1.2rem; /* Center the form */
+}
+}
+
 .form-group {
-  margin-bottom: 1rem;
+  margin: 1rem 0;
   text-align: left;
 }
 
@@ -88,6 +96,7 @@ label {
   display: block;
   margin-bottom: 0.5rem;
   font-weight: bold;
+  color: #ffcdcd; /* Darker text color */
 }
 
 input[type="text"],
@@ -97,20 +106,34 @@ input[type="email"] {
   border-radius: 4px;
   border: 1px solid #ccc;
   font-size: 14px;
+  transition: border-color 0.3s; /* Smooth transition */
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus {
+  border-color: #007BFF; /* Highlight color on focus */
+  outline: none; /* Remove default outline */
 }
 
 button.find-out-btn {
-  background-color: white;
-  color: black;
+  background-color: #007BFF; /* Primary button color */
+  color: white;
   padding: 12px 24px;
   font-size: 16px;
   border: none;
   cursor: pointer;
   border-radius: 4px;
   margin-top: 1rem;
+  transition: background-color 0.3s; /* Smooth transition */
 }
 
 button.find-out-btn:hover {
-  background-color: lightgray;
+  background-color: #0056b3; /* Darker shade on hover */
+}
+
+@media (max-width: 480px) {
+  .form-container {
+    padding: 1rem; /* Reduce padding on smaller screens */
+  }
 }
 </style>

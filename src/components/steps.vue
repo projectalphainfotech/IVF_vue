@@ -5,10 +5,9 @@
         <div class="steps-section-header">
           <h1>MOM’s IVF provides top-notch care in women's health specialties.</h1>
           <div class="steps-actions">
-            <div class="thq-button-animated thq-button-filled steps-button">
+          
               <!-- <span class="thq-body-small">Main action</span> -->
                <FormComponent></FormComponent>
-            </div>
           </div> 
         </div>
         <div class="steps-container3">
@@ -17,28 +16,28 @@
             <span class="steps-text14 thq-body-small">
               {{ step1Description }}
             </span>
-            <label class="steps-text15 thq-heading-3">01</label>
+            <!-- <label class="steps-text15 thq-heading-3">01</label> -->
           </div>
           <div class="steps-container5 thq-card">
             <h2 class="thq-heading-2">{{ step2Title }}</h2>
             <span class="steps-text17 thq-body-small">
               {{ step2Description }}
             </span>
-            <label class="steps-text18 thq-heading-3">02</label>
+            <!-- <label class="steps-text18 thq-heading-3">02</label> -->
           </div>
           <div class="steps-container6 thq-card">
             <h2 class="thq-heading-2">{{ step3Title }}</h2>
             <span class="steps-text20 thq-body-small">
               {{ step3Description }}
             </span>
-            <label class="steps-text21 thq-heading-3">03</label>
+            <!-- <label class="steps-text21 thq-heading-3">03</label> -->
           </div>
           <div class="steps-container7 thq-card">
             <h2 class="thq-heading-2">{{ step4Title }}</h2>
             <span class="steps-text23 thq-body-small">
               {{ step4Description }}
             </span>
-            <label class="steps-text24 thq-heading-3">04</label>
+            <!-- <label class="steps-text24 thq-heading-3">04</label> -->
           </div>
         </div>
       </div>
@@ -117,7 +116,7 @@ export default {
 }
 .steps-section-header {
   gap: var(--dl-space-space-oneandhalfunits);
-  top: 10%;
+  top: 15%;
   display: flex;
   position: sticky;
   align-items: flex-start;
