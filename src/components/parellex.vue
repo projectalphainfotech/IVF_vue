@@ -15,7 +15,7 @@ export default {
     data() {
         return {
             scrollY: 0.1,
-            speeds: [0.8,0.4,0.1],
+            speeds: [0.1,0.3,0.2],
         };
     },
     mounted() {
@@ -36,9 +36,8 @@ export default {
 
 .parallax-container {
     position: relative;
-    height: 150rem;
-    overflow: hidden;
-    width: 30rem;
+    height: 210vh;
+    width: 22.2rem;
 }
 
 .parallax {
