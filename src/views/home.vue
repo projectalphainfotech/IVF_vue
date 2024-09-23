@@ -2,6 +2,9 @@
   <div class="home-container">
     <logo></logo>
     <app-steps></app-steps>
+    <div v-if="!isDesktop">
+      <parellex></parellex>
+    </div>
     <!-- <app-cta></app-cta> -->
     <team></team>
     <app-testimonial></app-testimonial>
@@ -10,26 +13,37 @@
 </template>
 
 <script>
-
 import logo from '../components/logo.vue'
-// import AppHero from '../components/hero'
-import AppCta from '../components/cta'
-// import AppPricing from '../components/pricing'
+import parellex from '../components/parellex.vue'
 import AppSteps from '../components/steps'
 import AppTestimonial from '../components/testimonial'
-// import AppContact from '../components/contact'
-// import AppFooter from '../components/footer'
 import team from '../components/team.vue'
 
 export default {
   name: 'Home',
   components: {
     logo,
-    AppCta,
+    parellex,
     AppSteps,
     team,
     AppTestimonial,
-    // AppContact,
+  },
+  data() {
+    return {
+      isDesktop: false, // Initial state
+    };
+  },
+  mounted() {
+    this.checkDeviceType();
+    window.addEventListener('resize', this.checkDeviceType); // Update on resize
+  },
+  beforeDestroy() {
+    window.removeEventListener('resize', this.checkDeviceType);
+  },
+  methods: {
+    checkDeviceType() {
+      this.isDesktop = window.innerWidth >= 450; // Define desktop width
+    },
   },
   metaInfo: {
     title: `MOM's IVF`,
