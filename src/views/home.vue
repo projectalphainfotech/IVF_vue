@@ -32,7 +32,7 @@ export default {
     AppContact,
   },
   metaInfo: {
-    title: 'Spotless Hungry Crocodile',
+    title: `MOM's IVF`,
   },
 }
 </script>

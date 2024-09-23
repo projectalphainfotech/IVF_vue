@@ -4,11 +4,12 @@
       <div class="steps-container2 thq-grid-2">
         <div class="steps-section-header">
           <h1>MOM’s IVF provides top-notch care in women's health specialties.</h1>
-          <!-- <div class="steps-actions">
-            <button class="thq-button-animated thq-button-filled steps-button">
-              <span class="thq-body-small">Main action</span>
-            </button>
-          </div> -->
+          <div class="steps-actions">
+            <div class="thq-button-animated thq-button-filled steps-button">
+              <!-- <span class="thq-body-small">Main action</span> -->
+               <FormComponent></FormComponent>
+            </div>
+          </div> 
         </div>
         <div class="steps-container3">
           <div class="steps-container4 thq-card">
@@ -46,8 +47,13 @@
 </template>
 
 <script>
+import FormComponent from "../components/Form/Form.vue"
+
 export default {
   name: 'Steps',
+  components: {
+    FormComponent, // Registering the component
+  },
   props: {
     step1Description: {
       type: String,
@@ -87,6 +93,7 @@ export default {
     },
   },
 }
+
 </script>
 
 <style scoped>
