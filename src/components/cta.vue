@@ -4,8 +4,7 @@
       <div class="cta-background">
       
         <div class="team-member">
-          <h1>Meet Our Team
-          </h1>
+          <h1>Meet Our Team</h1>
           <img src="../assets/left.jpg" alt="Dr. Usha Maniya" class="team-image" />
           <h2 class="team-name">Dr. Usha Maniya</h2>
           <p class="team-title">Dr. Usha Maniya holds an MBBS</p>

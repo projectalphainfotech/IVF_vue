@@ -1,5 +1,6 @@
 <template>
   <div class="home-container">
+    <logo></logo>
     <app-steps></app-steps>
     <!-- <app-cta></app-cta> -->
     <team></team>
@@ -10,6 +11,7 @@
 
 <script>
 
+import logo from '../components/logo.vue'
 // import AppHero from '../components/hero'
 import AppCta from '../components/cta'
 // import AppPricing from '../components/pricing'
@@ -22,6 +24,7 @@ import team from '../components/team.vue'
 export default {
   name: 'Home',
   components: {
+    logo,
     AppCta,
     AppSteps,
     team,
