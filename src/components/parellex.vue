@@ -45,9 +45,13 @@ export default {
     position: absolute;
     top: 0;
     left: 0;
-    width: 150%;
+    width: 100%;
     height: auto;
     transition: transform 0.1s ease-out;
+}
+
+img{
+    width:100%;
 }
 
 </style>
