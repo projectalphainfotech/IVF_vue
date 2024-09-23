@@ -69,7 +69,7 @@ export default {
 <style scoped>
 .form-container {
   padding:2rem;
-  background-color: #f15353; /* Light background color */
+  background-color: #FF6347; /* Light background color */
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(175, 67, 67, 0.1);
   width: 30rem;
@@ -79,7 +79,7 @@ export default {
 @media screen and (max-width:764px) {
   .form-container {
   padding:2rem;
-  background-color: #f15353; /* Light background color */
+  background-color: #FF6347; /* Light background color */
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(175, 67, 67, 0.1);
   width: 18rem;
@@ -95,8 +95,9 @@ export default {
 label {
   display: block;
   margin-bottom: 0.5rem;
+  font-size:1.4rem;
   font-weight: bold;
-  color: #ffcdcd; /* Darker text color */
+  color: #ffffff; /* Darker text color */
 }
 
 input[type="text"],
@@ -111,12 +112,12 @@ input[type="email"] {
 
 input[type="text"]:focus,
 input[type="email"]:focus {
-  border-color: #007BFF; /* Highlight color on focus */
+  border-color: #007bff; /* Highlight color on focus */
   outline: none; /* Remove default outline */
 }
 
 button.find-out-btn {
-  background-color: #65b3eb; /* Primary button color */
+  background-color: #007bff; /* Primary button color */
   color: rgb(12, 11, 11);
   padding: 12px 24px;
   font-size: 16px;
@@ -128,7 +129,8 @@ button.find-out-btn {
 }
 
 button.find-out-btn:hover {
-  background-color: #0056b3; /* Darker shade on hover */
+  background-color: #96c5f7;
+  border-radius:1rem; /* Darker shade on hover */
 }
 
 @media (max-width: 480px) {

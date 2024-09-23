@@ -4,10 +4,15 @@
     <div class="team-members">
       <div class="team-member">
         <div class="team-info">
-          <img src="../assets/left.jpg" alt="Dr. Usha Maniya" class="team-image" />
-          <div >
+          <img src="../assets/drusha.png" alt="Dr. Usha Maniya" class="team-image" />
+          <div>
             <h2 class="team-name">Dr. Usha Maniya</h2>
             <p class="team-title">Dr. Usha Maniya holds an MBBS</p>
+            <p>MBBS, DNB(Obstetrics & Gynaecology), F.MAS (Delhi),</p>
+            <p> Training in Ultra Sound (FOGSI) Advanced Assisted Reproductive Tech.</p>
+            <p> Course (IVF training from IIRRH, Bangalore)</p>
+            <p> Director - PP Maniya Hospital Private limited, Surat</p>
+            <p> Head - Department of Obstetrics and Gynaecology with IVF Centre</p>
           </div>
         </div>
       </div>
@@ -25,9 +30,12 @@
           <img src="../assets/right.jpg" alt="Dr. Purvi Akabri" class="team-image" />
           <div>
             <h2 class="team-name">Dr. Purvi Akabri</h2>
-            <p class="team-title">
-              BSc in Biotechnology, MSc in Biotechnology (Gold Medalist)
-            </p>
+            <p class="team-title"> </p>
+            <p> EMBRYOLOGIST </p>
+            <p> Bsc in biotechnology </p>
+            <p> MSc in biotechnology (gold medalist) </p>
+            <p> Diploma in clinical embryology and assisted reproductive technology </p>
+            <p> PhD scholar </p>
           </div>
         </div>
       </div>
@@ -37,7 +45,7 @@
 
 <style scoped>
 .team {
-  padding: 5em 1em;
+  padding: 3em 1em;
   text-align: center;
 }
 
@@ -54,9 +62,8 @@
 }
 
 .team-member {
-  width: 250px;
   /* Consistent card width */
-  margin: 3rem;
+  width: 20rem;
   text-align: center;
 }
 
@@ -71,12 +78,12 @@
 }
 
 .team-info {
-  margin-top: 1em;
+  margin: 1em;
 }
 
 .team-name {
-  font-size: 1.2em;
-  margin-bottom: 0.5em;
+  font-size: 1em;
+  margin: 1em;
 }
 
 .team-title {
@@ -84,8 +91,7 @@
   color: #555;
 }
 
- .team-info div{
+.team-info div {
   margin: 2rem;
- }
-
+}
 </style>

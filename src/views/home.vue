@@ -5,7 +5,7 @@
     <!-- <app-cta></app-cta> -->
     <team></team>
     <app-testimonial></app-testimonial>
-    <app-contact></app-contact>
+    <!-- <app-contact></app-contact> -->
   </div>
 </template>
 
@@ -17,7 +17,7 @@ import AppCta from '../components/cta'
 // import AppPricing from '../components/pricing'
 import AppSteps from '../components/steps'
 import AppTestimonial from '../components/testimonial'
-import AppContact from '../components/contact'
+// import AppContact from '../components/contact'
 // import AppFooter from '../components/footer'
 import team from '../components/team.vue'
 
@@ -29,7 +29,7 @@ export default {
     AppSteps,
     team,
     AppTestimonial,
-    AppContact,
+    // AppContact,
   },
   metaInfo: {
     title: `MOM's IVF`,
