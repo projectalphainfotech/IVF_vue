@@ -116,14 +116,14 @@ input[type="email"]:focus {
 }
 
 button.find-out-btn {
-  background-color: #007BFF; /* Primary button color */
-  color: white;
+  background-color: #65b3eb; /* Primary button color */
+  color: rgb(12, 11, 11);
   padding: 12px 24px;
   font-size: 16px;
   border: none;
   cursor: pointer;
   border-radius: 4px;
-  margin-top: 1rem;
+  margin-top: 1.2rem;
   transition: background-color 0.3s; /* Smooth transition */
 }
 
