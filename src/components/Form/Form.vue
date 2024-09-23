@@ -39,16 +39,16 @@ export default {
       }
 
       try {
-        const response = await fetch('https://google-api-email.onrender.com/append-data', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json'
-          },
-          body: JSON.stringify({
-            number1: this.form.name,
-            number4: this.form.phone
-          })
-        });
+        // const response = await fetch('https://google-api-email.onrender.com/append-data', {
+        //   method: 'POST',
+        //   headers: {
+        //     'Content-Type': 'application/json'
+        //   },
+        //   body: JSON.stringify({
+        //     number1: this.form.name,
+        //     number4: this.form.phone
+        //   })
+        // });
 
         const result = await response.json();
 
