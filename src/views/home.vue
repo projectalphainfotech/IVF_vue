@@ -2,9 +2,9 @@
   <div class="home-container">
     <logo></logo>
     <app-steps></app-steps>
-    <div v-if="!isDesktop">
+    <!-- <div v-if="!isDesktop">
       <parellex></parellex>
-    </div>
+    </div> -->
     <!-- <app-cta></app-cta> -->
     <team></team>
     <app-testimonial></app-testimonial>
@@ -14,7 +14,7 @@
 
 <script>
 import logo from '../components/logo.vue'
-import parellex from '../components/parellex.vue'
+// import parellex from '../components/parellex.vue'
 import AppSteps from '../components/steps'
 import AppTestimonial from '../components/testimonial'
 import team from '../components/team.vue'
@@ -23,7 +23,7 @@ export default {
   name: 'Home',
   components: {
     logo,
-    parellex,
+    // parellex,
     AppSteps,
     team,
     AppTestimonial,
