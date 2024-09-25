@@ -3,7 +3,7 @@
     <div class="testimonial-max-width thq-section-max-width">
       <div class="testimonial-container10">
         <h2 class="thq-heading-2">{{ heading1 }}</h2>
-        <span class="testimonial-text11 thq-body-small">{{ content1 }}</span>
+        <!-- <span class="testimonial-text11 thq-body-small">{{ content1 }}</span> -->
       </div>
       <div class="thq-grid-2">
         <div class="thq-animated-card-bg-2">
@@ -42,7 +42,7 @@
             </div>
           </div>
         </div>
-        <div class="thq-animated-card-bg-2">
+        <!-- <div class="thq-animated-card-bg-2">
           <div class="thq-animated-card-bg-1">
             <div data-animated="true" class="thq-card testimonial-card3">
               <div class="testimonial-container16">
@@ -59,8 +59,8 @@
               <span class="testimonial-text20 thq-body-small">{{ review3 }}</span>
             </div>
           </div>
-        </div>
-        <div class="thq-animated-card-bg-2">
+        </div> -->
+        <!-- <div class="thq-animated-card-bg-2">
           <div class="thq-animated-card-bg-1">
             <div data-animated="true" class="thq-card testimonial-card4">
               <div class="testimonial-container18">
@@ -77,7 +77,7 @@
               <span class="testimonial-text23 thq-body-small">{{ review4 }}</span>
             </div>
           </div>
-        </div>
+        </div> -->
       </div>
     </div>
   </div>
@@ -89,11 +89,11 @@ export default {
   props: {
     author2Position: {
       type: String,
-      default: 'Teacher',
+      default: '',
     },
     author1Position: {
       type: String,
-      default: 'Marketing Manager',
+      default: '',
     },
     author3Alt: {
       type: String,
@@ -101,7 +101,7 @@ export default {
     },
     author1Name: {
       type: String,
-      default: 'Emily Johnson',
+      default: 'Shivendra Mishra',
     },
     author1Src: {
       type: String,
@@ -110,20 +110,20 @@ export default {
     },
     author3Name: {
       type: String,
-      default: 'Sarah Davis',
+      default: 'Mohini Parmar',
     },
     review2: {
       type: String,
       default:
-        'I highly recommend ABC Hospital for anyone considering IVF treatment. The doctors and nurses are top-notch professionals who go above and beyond to provide personalized care.',
+        'Dr.usha maniya explains whole process of IVF very well. hospital staff is also very helpful. After 10 years of marriage Thanks to MOMS IVF CENTRE and dr.usha maniya we had a baby',
     },
     author2Name: {
       type: String,
-      default: 'Michael Smith',
+      default: 'Mohini Parmar',
     },
     author4Position: {
       type: String,
-      default: 'Engineer',
+      default: '',
     },
     author4Name: {
       type: String,
@@ -168,7 +168,7 @@ export default {
     review1: {
       type: String,
       default:
-        'The staff at ABC Hospital are truly amazing. They are knowledgeable, compassionate, and dedicated to helping their patients achieve their dreams of starting a family.',
+        'Madams nature treatment is very good and also any question or doubt solve very easily. Good friendly environment.',
     },
     heading1: {
       type: String,
