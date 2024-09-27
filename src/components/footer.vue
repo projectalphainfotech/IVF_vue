@@ -8,7 +8,10 @@
       </div>
     </div>
     <div class="credits">
-      <span>Property @PP Mania Hospital Developed by Digitalk</span>
+      <span>Copyright © 2018 P. P. Maniya Hospital</span>
+      <br>
+      <br>
+      <span>Developed By Digitaklk</span>
     </div>
   </footer>
 </template>
