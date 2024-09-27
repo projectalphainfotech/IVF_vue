@@ -1,15 +1,14 @@
 <template>
   <footer class="footer">
     <div class="footer-content">
+    </div>
+    <div class="links">
+      <div class="links-column">
+        <a href="/privacy-policy">{{ privacyLink }}</a>
       </div>
-      <div class="links">
-        <div class="links-column">
-          <a href="/privacy-policy">{{ privacyLink }}</a>
-        </div>
-      </div>
-      <div class="credits">
-        <span>{{ footerText }} | © 2023 {{ companyName }} LLC. All rights reserved.</span>
-      </div>
+    </div>
+    <div class="credits">
+      <span>Property of PP Mania Hospital developed by Digitalk</span>
     </div>
   </footer>
 </template>
@@ -64,29 +63,36 @@ export default {
   background: #f8f8f8;
   text-align: center;
 }
+
 .footer-content {
   max-width: 800px;
   margin: 0 auto;
 }
+
 .newsletter {
   margin-bottom: 20px;
 }
+
 .newsletter-form {
   display: flex;
   justify-content: center;
 }
+
 input[type="email"] {
   padding: 10px;
   margin-right: 10px;
 }
+
 .links {
   display: flex;
   justify-content: space-around;
   margin-bottom: 20px;
 }
+
 .links-column {
   text-align: left;
 }
+
 .credits {
   font-size: 12px;
   color: #555;
