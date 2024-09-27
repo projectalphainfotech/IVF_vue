@@ -11,7 +11,7 @@
       <span>Copyright © 2018 P. P. Maniya Hospital</span>
       <br>
       <br>
-      <span>Developed By Digitaklk</span>
+      <span>Developed By digitalks.co.in</span>
     </div>
   </footer>
 </template>
