@@ -1,16 +1,17 @@
 <template>
   <footer class="footer">
     <div class="footer-content">
+      <!-- Any additional content here -->
     </div>
     <div class="links">
       <div class="links-column">
-        <a href="/privacy-policy">{{ privacyLink }}</a>
+        <!-- Using router-link for internal navigation -->
+        <router-link to="/privacy-policy">{{ privacyLink }}</router-link>
       </div>
     </div>
     <div class="credits">
       <span>Copyright © 2018 P. P. Maniya Hospital</span>
-      <br>
-      <br>
+      <br><br>
       <span>Developed By digitalks.co.in</span>
     </div>
   </footer>
