@@ -2,7 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Meta from 'vue-meta'
 
-import NotFound1, { NotFound } from './views/not-found'
+import privacy_policy from './components/privacy_policy.vue'
 import Home from './views/home'
 import './style.css'
 
@@ -13,20 +13,14 @@ export default new Router({
   mode: 'history',
   routes: [
     {
-      name: 'Not-Found',
-      path: '/not-found',
-      component: NotFound1,
+      name: 'privacy-policy',
+      path: '/privacy-policy',
+      component: privacy_policy,
     },
     {
       name: 'Home',
       path: '/',
       component: Home,
-    },
-    {
-      name: '404 - Not Found',
-      path: '**',
-      component: NotFound,
-      fallback: true,
     },
   ],
 })

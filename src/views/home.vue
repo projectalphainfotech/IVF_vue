@@ -8,6 +8,8 @@
     <!-- <app-cta></app-cta> -->
     <team></team>
     <app-testimonial></app-testimonial>
+    <Footer></Footer>
+      <Privacy_policy></Privacy_policy>
     <!-- <app-contact></app-contact> -->
   </div>
 </template>
@@ -18,7 +20,7 @@ import logo from '../components/logo.vue'
 import AppSteps from '../components/steps'
 import AppTestimonial from '../components/testimonial'
 import team from '../components/team.vue'
-
+import Footer from '../components/footer.vue'
 export default {
   name: 'Home',
   components: {
@@ -27,6 +29,7 @@ export default {
     AppSteps,
     team,
     AppTestimonial,
+    Footer
   },
   data() {
     return {
