@@ -63,7 +63,6 @@ export default {
 <style scoped>
 .footer {
   padding: 20px;
-  background: #f8f8f8;
   text-align: center;
 }
 
