@@ -8,7 +8,7 @@
       </div>
     </div>
     <div class="credits">
-      <span>Property of PP Mania Hospital developed by Digitalk</span>
+      <span>Property @PP Mania Hospital Developed by Digitalk</span>
     </div>
   </footer>
 </template>

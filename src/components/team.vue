@@ -11,8 +11,8 @@
             <p>MBBS, DNB(Obstetrics & Gynaecology), F.MAS (Delhi),</p>
             <p> Training in Ultra Sound (FOGSI) Advanced Assisted Reproductive Tech.</p>
             <p> Course (IVF training from IIRRH, Bangalore)</p>
-            <p> Director - PP Maniya Hospital Private limited, Surat</p>
             <p> Head - Department of Obstetrics and Gynaecology with IVF Centre</p>
+            <p> Director - PP Maniya Hospital Private Limited, Surat</p>
           </div>
         </div>
       </div>
